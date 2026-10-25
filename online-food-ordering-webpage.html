@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Ordering Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background-color:crimson;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc70;
+        }
+
+        .offer {
+            background-color: #ffcc70;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 25px 0;
+            color: #e63946;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 4px 8px #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 12px 0;
+            color: #333;
+        }
+
+        .price {
+            color: #e63946;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #e63946;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #b71c1c;
+        }
+
+        .reviews {
+            background-color: #ffe8d6;
+            padding: 25px;
+            text-align: center;
+            line-height: 2;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+            header h1 {
+                font-size: 25px;
+            }
+
+            .menu {
+                padding: 15px;
+            }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>మధువనం🪷</h1>
+        <p>A Taste of Tradition</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <section id="home">
+        <div class="offer" id="offers">
+            <h2>🎉 Special Offer!</h2>
+            <p>Get 20% OFF on your first order!</p>
+            <p>Use Coupon Code: TASTY20</p>
+        </div>
+    </section>
+
+    <h2 id="menu">Our Food Menu</h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500"
+                 alt="Delicious pizza">
+            <h3>Pizza</h3>
+            <p>Category: Fast Food</p>
+            <p class="price">₹199</p>
+            <button onclick="alert('Pizza added to your order!')">
+                Order Now
+            </button>
+        </div>
+
+       
+
+        <div class="card">
+            <img src="https://static.vecteezy.com/system/resources/previews/071/195/887/non_2x/delicious-chicken-biryani-with-spiced-rice-garnished-with-lemon-onion-and-coriander-served-in-wooden-bowl-traditional-indian-food-png.png"
+                 alt="Chicken biryani">
+            <h3>Chicken Biryani</h3>
+            <p>Category: Indian Food</p>
+            <p class="price">₹249</p>
+            <button onclick="alert('Biryani added to your order!')">
+                Order Now
+            </button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500"
+                 alt="Chocolate dessert">
+            <h3>Chocolate Dessert</h3>
+            <p>Category: Desserts</p>
+            <p class="price">₹99</p>
+            <button onclick="alert('Dessert added to your order!')">
+                Order Now
+            </button>
+        </div>
+
+    </div>
+
+    <h2 id="reviews">Customer Reviews</h2>
+
+    <div class="reviews">
+        <p>⭐ ⭐ ⭐ ⭐ ⭐ — "The food was delicious!" - Ravi</p>
+        <p>⭐ ⭐ ⭐ ⭐ — "Good quality and fast service." - Priya</p>
+        <p>⭐ ⭐ ⭐ ⭐ ⭐ — "Amazing biryani and great taste!" - Arjun</p>
+    </div>
+
+    <footer>
+        <p><b>Contact:</b> 98765 43210</p>
+        <p><b>Email:</b> Madhuvanam@example.com</p>
+        <p>© 2026 Maduvanam Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

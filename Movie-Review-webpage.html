@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Review Website</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        header{
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 15px;
+        }
+
+        nav{ color: aliceblue;
+            background-color:crimson;
+            padding: 15px;
+            text-align: center;
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: aliceblue;
+            margin: 15px;     
+        }
+
+        h2 {
+            text-align: center;
+            color: darkred;
+        }
+
+        .movies {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(230px, 1fr)
+            );
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: darkred;
+        }
+
+        .rating {
+            color: orange;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Popcorn Reviews🍿</h1>
+        <p>Discover movies, explore stories, and check ratings!
+</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <!-- Introduction -->
+    <section id="home">
+        <h2>Welcome to Movie World</h2>
+        <p style="text-align:center;">
+            Discover movies, explore stories, and check ratings!
+        </p>
+    </section>
+
+    <!-- Movie Cards -->
+    <section id="movies">
+        <h2>Popular Movies</h2>
+
+        <div class="movies">
+
+            <!-- Movie 1 -->
+            <div class="card">
+                <img src="https://images.openai.com/static-rsc-4/HxGLBXe6ScXIVNVk1Iekf2h0QKslrhvXCVUAdbxPWPFgDPwcQMMa3zw41B5UEeU6L0GasvYDLNUCDGFkv0M93UpOC6a3aDIzfVO9xE3o6bYGOAFQiYckz44yN4qPUug9PjMiO54YavPuq5V82wE6R2jjiSygfEqkiHxWjvqtJ1qQc3ia7g0RudFaGgaZ4Z6q?purpose=fullsize" alt="RRR poster">
+                 <h3>RRR</h3>
+                <p><b>Genre:</b>Action, Period Drama</p>
+                <p><b>Release:</b> 2022</p>
+                <p><b>Cast:</b>N. T. Rama Rao Jr., Ram Charan, Alia Bhatt, Ajay Devgn</p>
+                <p><b>Synopsis:</b>This fictional historical action drama follows two revolutionaries whose friendship 
+                    and struggles lead them through extraordinary adventures.</p>
+                <p class="rating">★★★★☆ 9/10</p>
+                <p><b>Review:</b>powerful performances, grand action scenes</p>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="card">
+                <img src="https://images.openai.com/static-rsc-4/b_BRBHpMPBjKG5xwj7sI1MUB6p7q5WVCyNAurn7jeJtkS3Wh1A3CPb1RZTgkJLiNG8vh_Odb1jfty25lAX0wfiWXoCLdbbt-7XAZBHbAAmLbYnVvRNBvkIiXOfz-0HSGF4zM62NpZfsKSst4amMoa7dTyxQogKDw9p_gzoP4bbOXBSmdn8iptLVvwatm5WDh?purpose=fullsize"  alt="Kalki">
+
+                <h3>Kalki 2898 AD</h3>
+                <p><b>Genre:</b>Science Fiction, Action, Fantasy</p>
+                <p><b>Release:</b> 2024</p>
+                <p><b>Cast:</b>Prabhas, Deepika Padukone, Amitabh Bachchan, Kamal Haasan</p>
+                <p><b>Synopsis:</b> In a futuristic world, different characters become connected 
+                    to a mysterious child and a larger destiny inspired by Indian mythology.</p>
+                <p class="rating">★★★★★ 8.5/10</p>
+                <p><b>Review:</b>Imaginative world, visual effects, and blend of mythology with science fiction.</p>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="card">
+                <img src="https://images.openai.com/static-rsc-4/-qdAfMCIpZh63bhcN0o1sFurKSYsh4Zp-YxQSM3BV_WgIaSj5UNhQMZOlPNABRhq7z_ugkuSfKuLFyefow3jVJ8R5DVxTgM7urvMtOQB128YOqcq5qnIOpc8jwy5UJDBOSF5oTpi2EPyFju1S-KuRGhIWYLJRz3xZYsvEorFfEM39yt2RePz7NDsP1EYcWUS?purpose=fullsize" alt="Sita Ramam">
+
+                <h3>Sita Ramam</h3>
+                <p><b>Genre:</b>Romance, Drama, Period Film</p>
+                <p><b>Release:</b> 2022</p>
+                <p><b>Cast:</b>Dulquer Salmaan, Mrunal Thakur, Rashmika Mandanna, Sumanth</p>
+                <p><b>Synopsis:</b>A beautiful love story about letters, destiny, and sacrifice.</p>
+                <p class="rating">★★★★☆ 9/10</p>
+                <p><b>Review:</b>A heart-touching romantic drama with beautiful music, strong performances, 
+                    stunning visuals, and a story about love that stands the test of time.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews">
+        <h2>About Our Reviews</h2>
+        <p style="text-align:center; padding:10px;">
+            Explore movie stories, cast details, genres, and ratings
+            before choosing your next movie.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Movie World</p>
+        <p>Created using Basic HTML and Internal CSS</p>
+    </footer>
+
+</body>
+</html>
